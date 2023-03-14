@@ -46,7 +46,7 @@ class Bird():
                 if(self.tilt > -90):
                     self.tilt = self.ROTATION_VELOCITY
                     
-    def draw(self, win):
+    def render(self, win):
         # Bird grafics counter
         self.gfx_count += 1
         
