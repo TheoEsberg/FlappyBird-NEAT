@@ -74,4 +74,8 @@ class Bird():
         
     def get_mask(self):
         return(pygame.mask.from_surface(self.gfx))
+    
+    def hit_ground(self):
+        if (self.y + self.gfx.get_height() >= 730):
+            pass
         

@@ -1,16 +1,16 @@
 import pygame, os
 
 # Game window settings
-MIN_WIDTH = 600
-MIN_HEIGHT = 800
+WIN_WIDTH = 600
+WIN_HEIGHT = 800
 FPS = 60
 
 # Pipe settings
 PIPE_GAP = 200
-PIPE_VELOCITY = 5
+PIPE_VELOCITY = 2.5
 
 # Base settings
-BASE_VELOCITY = 5
+BASE_VELOCITY = 2.5
 
 # This is the game grafics
 PIPE_GFX = pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "pipe.png")))
@@ -20,4 +20,6 @@ BIRD_GFX = [pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "
             pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "bird2.png"))),
             pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "bird3.png")))]
 
+# Fonts 
+FONT = pygame.font.SysFont("comicsans", 50)
 
