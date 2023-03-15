@@ -44,16 +44,13 @@ class Pipe():
             return True
         return False
     
-    def has_collided(self, bird):
-        pass
-    
     def add_new_pipe(self, bird):
         if not self.passed and self.x < bird.x:
             self.passed = True
             return True
         return False        
     
-    def off_screen(self, bird):
+    def off_screen(self):
         if (self.x + self.PIPE_TOP.get_width() < 0):
             return True
         return False

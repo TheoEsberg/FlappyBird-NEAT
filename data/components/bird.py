@@ -30,8 +30,8 @@ class Bird():
         displacement = self.velocity * self.tick_count + 1.5 * self.tick_count ** 2
         
         # Cap the top speed up and down
-        if (displacement >= 16):
-            displacement = 16
+        if (displacement >= 8):
+            displacement = 8
         
         if (displacement < 0):
             displacement -= 2
@@ -74,8 +74,4 @@ class Bird():
         
     def get_mask(self):
         return(pygame.mask.from_surface(self.gfx))
-    
-    def hit_ground(self):
-        if (self.y + self.gfx.get_height() >= 730):
-            pass
         

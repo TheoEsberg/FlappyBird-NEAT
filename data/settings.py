@@ -21,5 +21,5 @@ BIRD_GFX = [pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "
             pygame.transform.scale2x(pygame.image.load(os.path.join("res/gfx", "bird3.png")))]
 
 # Fonts 
-FONT = pygame.font.SysFont("comicsans", 50)
+FONT = pygame.font.SysFont("roboto", 50)
 
