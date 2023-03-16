@@ -20,8 +20,8 @@ class Pipe():
         self.top = self.height - self.PIPE_TOP.get_height()
         self.bottom = self.height + PIPE_GAP
         
-    def move(self):
-        self.x -= PIPE_VELOCITY
+    def move(self, score):
+        self.x -= PIPE_VELOCITY + (score * DIFFICULTY)
         
     def render(self, win):
         win.blit(self.PIPE_TOP, (self.x, self.top))

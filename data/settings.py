@@ -4,6 +4,7 @@ import pygame, os
 WIN_WIDTH = 600
 WIN_HEIGHT = 800
 FPS = 60
+DIFFICULTY = 0.00125
 
 # Pipe settings
 PIPE_GAP = 200

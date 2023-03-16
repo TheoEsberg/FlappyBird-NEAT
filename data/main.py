@@ -64,7 +64,7 @@ def main(genomes, config):
         
         # Move the pipes
         for pipe in pipes:
-            pipe.move() # Actually move the pipe
+            pipe.move(score) # Actually move the pipe
             for x, bird in enumerate(birds):
                 if (pipe.collide(bird)):
                     ge[x].fitness -= 1
@@ -94,7 +94,7 @@ def main(genomes, config):
                 ge.pop(x)
     
         # Move the base
-        base.move()
+        base.move(score)
         
         # Render the game
         Renderer.render_game(win, birds, pipes, base, score, GEN)

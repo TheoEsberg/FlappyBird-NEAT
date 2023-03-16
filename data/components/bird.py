@@ -30,8 +30,8 @@ class Bird():
         displacement = self.velocity * self.tick_count + 1.5 * self.tick_count ** 2
         
         # Cap the top speed up and down
-        if (displacement >= 8):
-            displacement = 8
+        if (displacement >= 12):
+            displacement = 12
         
         if (displacement < 0):
             displacement -= 2

@@ -9,10 +9,10 @@ class Base():
         self.x1 = 0
         self.x2 = self.WIDTH
         
-    def move(self):
+    def move(self, score):
         # Basic movement
-        self.x1 -= BASE_VELOCITY
-        self.x2 -= BASE_VELOCITY
+        self.x1 -= BASE_VELOCITY + (score * DIFFICULTY)
+        self.x2 -= BASE_VELOCITY + (score * DIFFICULTY)
         
         # Teleport when out of screen
         if (self.x1 + self.WIDTH < 0):
